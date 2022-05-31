@@ -1,15 +1,15 @@
 
-public class LengthOfLine extends ValuesOfLine {
-
-	public LengthOfLine(float x1, float y1, float x2, float y2) {
-		super(x1, y1, x2, y2);
-		// TODO Auto-generated constructor stub
-		
-	}
-	public void lenghtCalculation()
+public class LengthOfLine extends Main{
+	static float ans1;
+	public LengthOfLine(float a,float b,float c,float d)
 	{
-		float ans = (float) Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1),2));
-		System.out.println("The length of the line is "+ans);
+		ans1= (float) Math.sqrt(Math.pow((a - b),2)+Math.pow((c- d),2));
+		System.out.println("Length of line is "+ans1);
 	}
+	public float lengthCal()
+	{
+		return ans1;
+	}
+	
 	
 }
